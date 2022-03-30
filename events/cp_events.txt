@@ -1,0 +1,52 @@
+add_namespace = upc
+
+country_event = {
+	id = upc.1
+	title = upc.1.t
+	desc = upc.1.d
+	fire_only_once = yes
+	hidden = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				AND = {
+					country_exists = MAF
+					country_exists = CAF
+					country_exists = FNG
+					country_exists = GEA 
+				}
+			}
+			set_global_flag = cp_yes_kaiserreich
+		}
+		if = {
+			limit = {
+				NOT = {
+					AND = {
+						country_exists = MAF
+						country_exists = CAF
+						country_exists = FNG
+						country_exists = GEA 
+					}
+				}
+			}
+			set_global_flag = cp_no_kaiserreich
+		}
+		if = {
+			limit = {
+				76 = { is_core_of = SZK }
+			}
+			set_global_flag = cp_rt56_yes
+		}
+		if = {
+			limit = {
+				498 = { is_core_of = SHN }
+				501 = { is_core_of = KAR }
+				497 = { is_core_of = WAA }
+			}
+			set_global_flag = cp_mdawn_yes
+		}
+	}
+}
