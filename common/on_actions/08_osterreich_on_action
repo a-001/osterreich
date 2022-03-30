@@ -1,0 +1,34 @@
+on_subject_free = {
+    effect = {
+        #make sure Dominions lose the dominion tag
+        if = {
+            limit = {
+                OR = {
+                    original_tag = WGR
+                    original_tag = POL
+                }
+            }
+            abandon_colony_tag = yes
+        }
+    }
+}
+on_puppet={
+    effect={
+        if = {
+            limit = {
+                original_tag = WGR
+                is_subject_of = AUS
+            }
+    set_cosmetic_tag = AUS_GER
+         }
+    }
+    effect={
+        if = {
+            limit = {
+                original_tag = POL
+                is_subject_of = AUS
+            }
+    set_cosmetic_tag = AUS_POL
+         }
+    }
+}
