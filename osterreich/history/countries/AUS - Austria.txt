@@ -14,7 +14,7 @@ set_technology = {
 	early_fighter = 1
 	basic_train = 1
 }
-puppet = WGR
+puppet = PRS
 puppet = POL
 puppet = TRA
 puppet = CRO
@@ -24,12 +24,28 @@ puppet = CRI
 puppet = ROM
 puppet = EGY
 puppet = BOS
+puppet = MEC
+puppet = HNO
+puppet = LUB
+puppet = BAV
 set_cosmetic_tag = AUS_AUS
 EGY = {
 	set_cosmetic_tag = AUS_EGY
 }
+MEC = {
+	set_cosmetic_tag = AUS_MEC
+}
+HNO = {
+	set_cosmetic_tag = AUS_HNO
+}
 BOS = {
 	set_cosmetic_tag = AUS_BOS
+}
+LUB = {
+	set_cosmetic_tag = AUS_LUB
+}
+BAV = {
+	set_cosmetic_tag = AUS_BAV
 }
 recruit_character = AUS_kurt_schuschnigg
 recruit_character = AUS_karl_renner

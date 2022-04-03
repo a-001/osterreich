@@ -6,7 +6,7 @@ state={
 	state_category = city
 
 	history={
-		owner = WGR
+		owner = PRS
 	        #controller = GER
 		
 		victory_points = {
@@ -27,7 +27,7 @@ state={
 			}
 			air_base = 6
 		}
-		add_core_of = WGR
+		add_core_of = PRS
 		1939.1.1 = {
 			buildings = {
 				anti_air_building = 5

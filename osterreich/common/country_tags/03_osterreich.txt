@@ -1,0 +1,5 @@
+PRS = "countries/Prussia.txt"
+HNO = "countries/Hanover.txt"
+MEC = "countries/Mecklenburg.txt"
+LUB = "countries/Lubeck.txt"
+BAV = "countries/Bavaria.txt"
